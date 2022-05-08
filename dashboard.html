@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<title>Kiakia.com/Dashboard</title>
+			<link rel="stylesheet" href="kiakia.css"/>
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+
+			<!-- The website meta data to be shown in web search results. -->
+			<meta charset="UTF-8">
+			<meta name="descrition" content="">
+			<meta name="key words" content="">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<div class="header">
+		     <div>
+		        	<a  class="account" title="Create a new account on FarmFund" style="float:right;"
+			   		href="signup.html"><b>Sign up</b>
+		   		</a>
+		        	<a  class="account" title="Sign into your FarmFund account here"  style="float:right;"
+			    		href="Login.html"><b>Log in</b>
+				</a>
+		     </div>
+			<a href="Kiakia.html"><img src="pictures/kiakialogo.png"  alt="Kiakia.com" width="250px" height="300px"></a>
+		</div>
+
+		<div id="myTopnavk" class="topnavk sticky">
+			<a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">
+		      <i class="fa fa-bars"></i>
+		     </a>
+			<a href="kiakia.html">HOME</a>
+			<a title="Our products" href="product.html">PRODUCTS</a>
+			<a title="About the company" href="#company.html">COMPANY</a>
+		     <a title="Where to find us" href="#contactus.html">CONTACT</a>
+		     <a title="Find out more about us" style="color:gold; border-left:1px solid white;"
+			href="#howitworks.html">HOW IT WORKS
+			</a>
+		</div>
+		<br/>
+
+		<!--Main Body-->
+		<div class="main">
+
+		<div class="rowds">
+			<!--LEFT DASHBOARD-->
+			<div class="columnds left" style="outline:5px solid #f1f1f1;">
+				<div><a href="#icon"></a><img src="pictures/avatar2.png" alt="dashboardicon"
+					style="width:40%; display: block; margin-right: auto; margin-left: auto; border-radius:25px;">
+				</div>
+				<div style="color:#2e3d3d; text-align:center;"><b>Ahire Tersoo</b></div>
+				<br/>
+
+				<ul class="dash">
+					<li class="dash"><a href="#dashboard"><i class="fa fa-home icon"
+						style="font-size:25px;margin-right:40px;"></i>Dashboard</a>
+					</li>
+					<li class="dash" onclick="myFunctionbank()"><a class="active" href="#bkad"><i class="material-icons icon"
+						style="font-size:25px;margin-right:40px;">account_box</i>Bank Account Details</a>
+					</li>
+					<li class="dash"><a href="#kkpay"><i class="fa fa-credit-card icon"
+						style="font-size:25px;margin-right:40px;"></i>KiaKia payment</a>
+					</li>
+					<li class="dash"><a href="#credratg"><i class="fa fa-bar-chart icon"
+						style="font-size:25px;margin-right:40px;"></i>Credit Rating</a>
+					</li>
+					<li class="dash"><a href="#LoanFac"><i class="fa fa-bank icon"
+						style="font-size:25px;margin-right:40px;"></i>Loan Facility</a>
+					</li>
+					<li class="dash"><a href="#kksav"><i class="fa fa-calculator icon"
+						style="font-size:25px;margin-right:40px;"></i>KiaKia Savings</a>
+					</li>
+					<li class="dash"><a href="#p2pl"><i class="fa fa-money icon"
+						style="font-size:25px;margin-right:40px;"></i>Peer-to-Peer Lending</a>
+					</li>
+					<li class="dash"><a href="#settings"><i class="fa fa-cog fa-spin icon"
+						style="font-size:25px;margin-right:45px;"></i>Settings</a>
+					</li>
+					<li class="dash"><a href="#profile"><i class="fa fa-address-card icon"
+						style="font-size:25px;margin-right:40px;"></i>Profile</a>
+					</li>
+					<li class="dash"><a href="logoutds"><i class="fa fa-circle-o-notch icon"
+						style="font-size:25px;margin-right:40px;"></i>Log-Out</a>
+					</li>
+			  	</ul>
+		     </div>
+			<!--RIGHT DASHBOARD-->
+		     <div class="columnds right">
+			   	<div id="bank">
+					<h1><i class="fa fa-home icon" style="font-size:50px;margin-right:20px;
+					margin-Left:10px;"></i>User Dasboard
+					</h1>
+
+					<hr class="dasha"/>
+					    <h3 style="text-align:center;color:#2e3d3d;">Kindly fill in your correct bank details below</h3>
+					<hr class="dashap"/>
+
+					<form action="portal.php" method="POST" autocomplete="on">
+						<!-- Code that allows the user to input his information -->
+						<label class="bkdash"><b>Account Name</b></label>
+							<input type="text" placeholder=" Ahire Tersoo" name="Full Name" required class="bkinput">
+						     <br/>
+						<label class="bkdash"><b>Account Number</b></label>
+							<input type="text" placeholder=" NUBAN" name="A/C Number" required class="bkinput">
+							<br/>
+						<label class="bkdash"><b>Bank Name</b></label>
+							<input type="text" placeholder="Zenith Bank" name="Bank Name" required class="bkinput">
+							<br/>
+						<label class="bkdash"><b>BVN Code</b></label>
+							<input type="text" placeholder="Bank Verification Number" name="BVN" required class="bkinput">
+							<br/>
+						<!-- Button for Saving the user's bank information-->
+						<button  id="buttonds" type="submit">Save</button>
+			          </form>
+		    		</div>
+		     </div>
+		</div>
+
+		<!-- Chat widget -->
+		<div id="chatcon">
+		  	<form   action="portal.php" method="POST">
+		   		<textarea title="Type your message in the space provided">Leave a message here ...</textarea><br/>
+		   		<button class="chat" type="submit">Send</button>
+		  	</form>
+		</div>
+
+		<div id="chat" class="fixed" onclick="myFunctionbox()">
+		    <i  title="Open/Close the chat widget." class="material-icons" style="font-size: 30px;">chat</i>
+		</div>
+
+
+		</div>
+
+		<footer>
+			<h6 class="quick">Quick Links</h6>
+			<div>
+				<a href="dashboard.html"><b>Dasboard</b></a><br/>
+				<a href="product.html"><b>Products</b></a><br/>
+				<a title="Visit the latest updates on our blog" href="#Blog.html"><b>Blog<b></a><br/>
+			</div>
+		</footer>
+
+		<script src="kiakia.js"></script>
+
+	</body>
+</html>

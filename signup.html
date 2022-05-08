@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+     <head>
+          <title>Sign up-KiaKia</title>
+          <link rel="stylesheet" href="kiakia.css"/>
+          <link rel="stylesheet" href="accountbuttonsk.css"/>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+          <meta chrarset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     </head>
+
+     <body>
+          <div class="header">
+                    <div>
+                         <a  class="account" title="Create a new account on KiaKia-Pay"
+                         style="float:right;" href="signup.html"><b>Sign up</b>
+                         </a>
+                         <a  class="account" title="Sign into your KiaKia-Pay account here"
+                         style="float:right;" href="login.html"><b>Log in</b>
+                         </a>
+                    </div>
+                    <a href="Kiakia.html"><img src="pictures/kiakialogo.png"  alt="Kiakia.com"
+                         width="250px" height="300px">
+                    </a>
+          </div>
+
+          <div id="myTopnavk" class="topnavk sticky">
+               <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+               </a>
+               <a href="kiakia.html">HOME</a>
+          	<a title="Our products" href="product.html">PRODUCTS</a>
+               <a title="About the company" href="#company.html">COMPANY</a>
+		     <a title="Where to find us" href="#contactus.html">CONTACT</a>
+		     <a title="Find out more about us" style="color:gold; border-left:1px solid white;"
+			href="#howitworks.html">HOW IT WORKS
+			</a>
+          </div>
+
+          <br/>
+
+          <div class="main">
+                    <h1 style="text-align:center;">
+                         <b>KiaKia-Pay<span style="color:steelblue;">  Account</span></b>
+                    </h1>
+                    <br/>
+
+                    <p style="text-align:center;"><b>Please fill this
+                         <span style="color:steelblue;">form</span> below to create an account</b>
+                    </p>
+                    <hr>
+
+                    <form action="dashboard.html" method="POST" autocomplete="on">
+                         <div class="container">
+                              <div><input type="text" placeholder=" Firstname"  name="firstname" reqiured></div><br/>
+                              <div><input type="text" placeholder="Lastname"  name="lastname" required></div><br/>
+                              <div><input type="checkbox" onclick="myFunctionpass()">Show Password<br/>
+                              <div><input id="myInput" type="password" placeholder="Password" name="psw"
+                                   required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least
+                                   one number and one uppercase and lowercase letter, and at least 8 or more characters" required></div><br/>
+                              <div><input type="password" placeholder="Repeat Password" name="psw-repeat" reqiured></div><br/>
+                              <div><input type="email" placeholder="Email" name="email" reqiured></div><br/>
+                              <div><input type="tel" placeholder="Telephone no." name="Telephone" reqiured></div><br/>
+
+                              <div><label>Account type</label></div>
+                              <div>
+                                   <input type="radio" name="acctype" value="Merchant">Merchant
+                                   <input type="radio" name="acctype" value="Customer">Customer
+                              </div>
+                         </div>
+                         <br/>
+
+                         <div>
+                              <label><b>Gender</b></label><br/>
+                         </div>
+
+                         <div>
+                              <input type="radio" name="gender" value="male">Male
+                              <input type="radio" name="gender" value="female">Female
+                              <input type="radio" name="gender" value="other">Other
+                         </div>
+                         <br/>
+
+                         <div style="text-align:center">
+                              <input type="checkbox" checked="checked" required> I have read and agreed to be bound by the following
+                              <span style="color:blue;"><a href="#">Terms and Conditions</a></span>
+                         </div>
+
+                         <div style="text-align:center">
+                              <button style="text-color:white;border-radius:30px;">Sign Up</button>
+                         </div>
+
+                         </div>
+
+                         <p style="text-align:center">Registered user?<a style="color:blue;"  href="Log-in.html"> Log in here</a></p>
+                    </form>
+
+               <form  id="chatcon" action="portal.php" method="POST">
+                    <textarea>Leave a message here ...</textarea><br/>
+                    <button class="chat" type="submit">Send</button>
+               </form>
+
+               <div id="chat" class="fixed">
+                    <i class="material-icons" onclick="myFunctionbox()" style="font-size: 30px;">chat</i>
+               </div>
+
+          </div>
+          <br/>
+
+          <footer>
+               <h6 class="quick">Quick Links</h6>
+                    <a href="dashboard.html"><b>Dasboard</b></a>
+                    <a href="product.html"><b>Products</b></a><br/>
+                    <a title="Visit the latest updates on our blog" href="#Blog.html">Blog</a>
+          </footer>
+
+
+          <script src="kiakia.js"></script>
+
+     </body>
+</html>
